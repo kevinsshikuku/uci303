@@ -1,0 +1,187 @@
+
+body{
+ padding: 0;
+ margin: 0;
+ min-width: 100em;
+ background-color: rgb(231, 207, 231);
+
+}
+body::-webkit-scrollbar{
+ display: none;
+}
+/*global  styles*/
+h1,h2,h3,h4,h5,h6{
+ padding: 0;
+ margin: 0;
+}
+.div h1{
+  text-align: center;
+}
+
+.header{
+ z-index: 3;
+ height: auto;
+ position: fixed;
+ padding: 0;
+ margin: 0;
+ top: 0;
+ background-color: rgb(231, 207, 231);
+ width: 100%;
+ color: rgb(7, 7, 7);
+ text-align: center;
+}
+.header h2{
+
+ font-size: 35px;
+ padding: 0;
+ margin: 0;
+ text-shadow: 3px 3px 2px #f60000;
+}
+.header h2::first-letter{
+ color:yellow;
+ font-size: 5rem;
+
+}
+
+/*Navigation bar*/
+.nav{
+ position: fixed;
+ background-color: rgb(231, 207, 231);
+ top:9em;
+ width: 100%;
+ height: auto;
+ padding-top: 1em;
+}
+.nav ul{
+ float: right;
+ list-style-type: none;
+ margin-right: 12em;
+
+}
+.nav ul li{
+ position: inline;
+ padding: 0;
+ color: rgb(0, 0, 0);
+ display: inline;
+ margin-right: 1em;
+ cursor: pointer;
+ font-weight: bold;
+ font-style: italic;
+ font-size: 20px;
+}
+.nav ul li:hover{
+  color: rgb(255, 0, 0);
+}
+img{
+ width: 5em;
+ height: 5em;
+ margin-top: -2em;
+ border-radius: 50%;
+ position: absolute;
+}
+
+
+/* body section starts here*/
+.bodySection{
+ min-height: 83vh;
+ margin-top: 10em;
+ margin-left: 10vw;
+ width: 70%;
+ display: flex;
+ flex-direction: row;
+ border-radius: 5px;
+ background-color: #464646;
+}
+.sideA{
+ flex: 1;
+ margin-top: 5em;
+}
+.sideA  h2{
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.sideA a{
+ display: block;
+ text-decoration: none;
+ margin-bottom: 10px;
+ margin-left: 5px;
+ margin-right: 10px;
+ font-family: sans-serif;
+ font-size: 17px;
+ /* background-color: #3b3b3b; */
+ color: rgb(180, 178, 178);
+ border-bottom: 1px solid gray;
+
+}
+.sideA a:hover{
+  background-color: #000000;
+}
+/*tool tip*/
+li[data-descr]:hover::after{
+ content: attr(data-descr);
+ position: absolute;
+ margin: auto;
+ margin-top: 2em;
+ margin-left: -2em;
+ border: 1px solid black;
+ border-radius: 10px;
+ padding: 12px;
+ color: yellow;
+ background-color: violet;
+ font-size: 15px;
+ z-index: 1;
+}
+
+
+/*side b begins*/
+.sideB{
+ background-color: rgb(223, 197, 223);
+ width: 80%;
+ padding: 1em 0 0 2em;
+ margin-left: 10%;
+
+}
+.div h1{
+ height: 0;
+ overflow: hidden;
+ position: fixed;
+ margin-top: -2.2em;
+}
+.div:target h1{
+ height: auto;
+}
+.div{
+ height: 0px;
+ overflow: hidden;
+ /* transition: height 1s ease, padding 1s linear; */
+}
+.div p{
+  font-size: 1.7em;
+}
+.div:target{
+ height: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
